@@ -7,7 +7,7 @@ namespace Algorithms
      * “Buzz” if an integer is divisible by 5, and “FizzBuzz” if an integer is divisible by both 3 and 5
      * */
 
-    public class FizzBuzz
+    public class FizzBuzz : IAlgorithm
     {
         public void Run()
         {

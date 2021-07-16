@@ -8,7 +8,7 @@ namespace Algorithms
     The pass through the list is repeated until the list is sorted.
     */
 
-    public class BubbleSort
+    public class BubbleSort : IAlgorithm
     {
         public void Run()
         {

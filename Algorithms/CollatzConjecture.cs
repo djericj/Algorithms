@@ -13,9 +13,15 @@ namespace Algorithms
     you to a loop: 1, 4, 2, 1, 4, 2, 1, on and on forever.
     */
 
-    public class CollatzConjecture
+    public class CollatzConjecture : IAlgorithm
     {
-        public void Run(decimal num)
+        public void Run()
+        {
+            Random r = new Random();
+            CollatzConjectureAlgorithm(r.Next());
+        }
+
+        public void CollatzConjectureAlgorithm(decimal num)
         {
             decimal r = 0;
             if (num % 2 == 0)
@@ -27,7 +33,7 @@ namespace Algorithms
                 r = (num * 3m) + 1m;
             }
             Console.WriteLine(r);
-            Run(r);
+            CollatzConjectureAlgorithm(r);
         }
     }
 }

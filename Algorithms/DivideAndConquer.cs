@@ -2,7 +2,7 @@
 
 namespace Algorithms
 {
-    public class DivideAndConquer
+    public class DivideAndConquer : IAlgorithm
     {
         public void Run()
         {
